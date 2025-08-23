@@ -1,0 +1,29 @@
+/* Q2. HTML & CSS – Media Query
+Create a responsive web page that changes the background color based on the viewport width.
+Requirements:
+If screen width greater than 768px → background color should be lightblue
+If screen width between 501px and 767px → background color should be lightgrey
+If screen width 500px or less → background color should be lightgreen */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+@media (min-width: 768px ){
+.container{
+    background-color: aqua;
+}
+}
+
+@media (max-width: 500px ){
+.container{
+    background-color: lightgray;
+}
+}
