@@ -18,3 +18,19 @@ for (let i = 0; i<arr.length; i++){
 }
 
 console.log("Result: ", result);
+
+// Time Complexity: Best Case: O(1)
+// Average Case: O(n)
+// Worst Case: O(n)
+
+// Disadvantages
+
+// for large data set we can't use linear search
+
+
+/**
+ * Advantages
+ * Best for Small data sets
+ * Does not take any extra space
+ * Works on Sorted/Unsorted array
+ */
