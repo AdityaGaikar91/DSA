@@ -12,6 +12,7 @@ for (let i = 0; i<arr.length; i++){
         return `Element found at index ${i}`;
         break;
     }
+
 }
  return 'Result: Element not Found';
 
