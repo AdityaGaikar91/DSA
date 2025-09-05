@@ -5,7 +5,7 @@ function printNumbers(n) {
     }
 }
 
-printNumbers(10);
+printNumbers(100);
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
