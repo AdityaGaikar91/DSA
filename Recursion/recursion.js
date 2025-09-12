@@ -10,3 +10,9 @@ function abc() {
 }
 
 abc();
+
+
+function sum(a, b){
+    let result = a + b;
+    return result;
+}
