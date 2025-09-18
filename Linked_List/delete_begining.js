@@ -5,6 +5,8 @@ class Node {
     }
 }
 
+// let head = null;
+
 let head = new Node(2);
 let firstNode = new Node(3);
 let secondNode = new Node(4);
@@ -20,7 +22,7 @@ thirdNode.next = fourthNode;
 function deleteAtBegining(){
 
     if(head == null){
-        console.log("List is Empty");
+        console.log("The List is Empty");
         return
     }
     let temp = head;
