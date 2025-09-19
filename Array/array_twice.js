@@ -1,14 +1,14 @@
-// const arr = [1, 2, 3, 4, 5, 6]; // 2n
+const arr = [1, 2, 3, 4, 5, 6]; // 2n
 
-// let j = arr.length;
+let j = arr.length;
 
-// for(let i = 0; i< j; i++){
-//    arr[j + i] = arr[i];
-// }
+for(let i = 0; i< j; i++){
+   arr[j + i] = arr[i];
+}
 
-// for(let i = 0; i< arr.length; i++){
-//    console.log(arr[i]);
-// }
+for(let i = 0; i< arr.length; i++){
+   console.log(arr[i]);
+}
 
 // Time Complexity = O(n) + O(n) = O(n)
 // Space Complexity = O(n)
@@ -23,14 +23,14 @@
 
 
 // Finding max element in array
-const arr = [2,5, 8, 3, 9]
+// const arr = [2,5, 8, 3, 9]
 
-let min = arr[0];
+// let min = arr[0];
 
-for(let i = 0; i<arr.length; i++){
-   if(arr[i]< min){
-      min = arr[i];
-   }
-}
+// for(let i = 0; i<arr.length; i++){
+//    if(arr[i]< min){
+//       min = arr[i];
+//    }
+// }
 
-console.log(min);
+// console.log(min);

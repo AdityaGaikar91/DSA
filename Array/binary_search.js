@@ -5,7 +5,7 @@
 
 const arr = [-1,0,3,5,9,12];
 
-let target = -1;
+let target = 5;
 
 function binarySearch(arr, target) {
     let start = 0;
