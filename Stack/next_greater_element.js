@@ -27,8 +27,43 @@ class Stack{
         this.top --
         return x;
     }
+
+    peek(){
+        return this.arr[this.top];
+    }
+
+    isEmpty() {
+        if(this.top<0){
+            return true;
+        }
+        return false;
+    }
 }
 
-function nextGreaterElement(arr){
-    
+function nextGreaterElement(numbers){
+    let Length = numbers.length;
+    let new_stack = new Stack(Length);
+
+    new_stack.push(numbers[0]);
+
+    for(let i = 1; i<Length; i++){
+
+        if(new_stack.isEmpty()){
+            new_stack.push(numbers[i]);
+            continue;
+        }
+
+        while(!new_stack.isEmpty() && new_stack.peek() < numbers[i]) {
+            let x = new_stack.pop();
+            console.log(`${x} - ${numbers[i]}`)
+        }
+
+        new_stack.push(numbers[i]);
+    }
+
+    while(!new_stack.isEmpty()){
+        console.log(`${new_stack.pop()} ---> -1`)
+    }
 }
+
+nextGreaterElement([23, 11, 4, 19]);
